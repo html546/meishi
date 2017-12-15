@@ -1,0 +1,15 @@
+.mui-content {
+	background: #fff;
+}
+
+.mui-segmented-control .mui-control-item {
+	width: 100%;
+}
+#content1>img{
+	width: 255px;
+	height: 90px;
+	position: relative;
+	left: 50%;
+	margin-left: -128px;
+	top: 10px;
+}
