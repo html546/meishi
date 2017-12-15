@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	</head>
+
+	<body class="bg">
+		<!--头部导航-->
+		<header id="header" class="mui-bar mui-bar-nav" >
+			<a href="#" class="mui-icon mui-icon-search mui-pull-left"></a>
+			<h1 class="mui-title">厨房课堂</h1>
+			<a href="#" class="mui-icon mui-pull-right">
+				<img src="images/syfacaipuwz.png" width="25" height="25" alt="" />
+			</a>
+		</header>
+		<!--头部选项卡-->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a href="#item1mobile" class="mui-control-item mui-active">
+						首页
+					</a>
+					<a href="#item2mobile" class="mui-control-item">
+						分类
+					</a>
+					<a href="#item3mobile" class="mui-control-item">
+						食材
+					</a>
+					<a href="#item4mobile" class="mui-control-item">
+						健康
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<!--滑动浏览-->
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-1
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-2
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-3
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-4
+									</li>
+									<li class="mui-table-view-cell">
+										第一个选项卡子项-5
+									</li>
+								</ul>-->
+								<div class="mui-slider carousel-slider">
+								  <div class="mui-slider-group mui-slider-loop">
+								    <!--支持循环，需要重复图片节点-->
+								    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lunbo4.jpg" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="images/lunbo1.jpg" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="images/lunbo2.jpg" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="images/lunbo3.jpg" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="images/lunbo4.jpg" /></a></div>
+								    <!--支持循环，需要重复图片节点-->
+								    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lunbo1.jpg" /></a></div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll4" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部选项卡-->
+		<nav class="mui-bar mui-bar-tab mui-bar2">
+            <a id="defaultTab" class="mui-tab-item mui-active" href="tab-webview-subpage-about.html">
+                <span class="mui-icon iconfont icon-caipu"></span>
+                <span class="mui-tab-label">菜谱</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+                <span class="mui-icon iconfont icon-shangchang"></span>
+                <span class="mui-tab-label">商场</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-contact.html">
+                <span class="mui-icon iconfont icon-H_shejiaofenxi"></span>
+                <span class="mui-tab-label">社交</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+                <span class="mui-icon iconfont icon-iconfontgeren"></span>
+                <span class="mui-tab-label">个人中心</span>
+            </a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:false
+			})
+			(function($){
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true
+				})
+			})
+			var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+			var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+			var html4 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第四个选项卡子项-1</li><li class="mui-table-view-cell">第四个选项卡子项-2</li><li class="mui-table-view-cell">第四个选项卡子项-3</li><li class="mui-table-view-cell">第四个选项卡子项-4</li><li class="mui-table-view-cell">第四个选项卡子项-5</li></ul>';
+			var item2 = document.getElementById('item2mobile');
+			var item3 = document.getElementById('item3mobile');
+			var item4 = document.getElementById('item4mobile');
+			document.getElementById('slider').addEventListener('slide', function(e) {
+				if(e.detail.slideNumber === 1) {
+					if(item2.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item2.querySelector('.mui-scroll').innerHTML = html2;
+						}, 500);
+					}
+				} else if(e.detail.slideNumber === 2) {
+					if(item3.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item3.querySelector('.mui-scroll').innerHTML = html3;
+						}, 500);
+					}
+				}else if(e.detail.slideNumber === 3){
+					if(item4.querySelector('.mui-loading')){
+						setTimeout(function(){
+							item4.querySelector('.mui-scroll').innerHTML = html4;
+						})
+					}
+				}
+			
+			});
+			var gallery = mui('.carousel-slider');
+			gallery.slider({
+				interval:3000
+			})
+			window.onload = function(){
+				var height1 = ($(window).height()-135)+'px';
+				$('.mui-control-content').css('min-height',height1);
+			}
+		</script>
+	</body>
+
+</html>

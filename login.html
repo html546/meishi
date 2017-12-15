@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	</head>
+
+	<body class="bg">
+
+		<div class="mui-h1 logo mui-text-center">
+			<img src="images/chulogo.png" width="159" height="38" alt="" />
+		</div>
+		<div class="input-field">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>
+						<img src="images/zcdlyonghu.png" width="20" height="20"/>
+					</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入账号/手机号码">
+				</div>
+				<div class="mui-input-row">
+					<label>
+						<img src="images/zcmima.png" width="20" height="20"/>
+					</label>
+					<input type="password" class="mui-input-password" placeholder="请输入密码" />
+				</div>
+				<button type="button" class="mui-btn mui-btn-block mui-btn-danger login-btn" data-loading-text='提交中'>登录</button>
+			</form>
+			<div>
+				<a class="mui-pull-left login-forget">忘记密码?</a>
+				<a class="mui-pull-right login-forget">新用户注册</a>
+				<div class="mui-clearfix"></div>
+			</div>
+		</div>
+		<div class="footer">
+				<div class="personal-mybuluo-head">
+					<div class="personal-mybuluo-wording">第三方快捷登录</div>
+					<div class="personal-border jmu-border-1px border-bottom"></div>
+				</div>
+				<div class="mui-row login-footer">
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcQQ.png" alt="" />
+						</a>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcweibo.png"/>
+						</a>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcweixin.png"/>
+						</a>
+					</div>
+				</div>
+			
+		</div>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui(document.body).on('tap','.mui-btn',function(e){
+				mui(this).button('loading');
+				setTimeout(function(){
+					mui(this).button('reset');
+				}.bind(this),2000);
+			})
+			//安卓处理表单聚焦弹出软键盘会使页面移动的问题
+			var winHeight = $(window).height();
+			$(window).resize(function(){
+				var thisHeight = $(this).height();
+				if(winHeight - thisHeight > 140){
+					$('.footer').css('position','static');
+				}else{
+					$('.footer').css('position','fixed');
+				}
+			})
+			//IOS处理表单聚焦弹出软键盘会使页面移动的问题
+			$(document).on('focusin',function(){
+				$('.footer').css('position','static');
+			})
+			$(document).on('focusout',function(){
+				$('.footer').css('position','fixed');
+			})
+		</script>
+	</body>
+
+</html>

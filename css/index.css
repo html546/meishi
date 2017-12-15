@@ -1,0 +1,37 @@
+.bg{
+	background: #fff;
+}
+.mui-bar{
+	background: #ff6867;
+	color: #fff;
+}
+.mui-bar.mui-bar2{
+	background: #fff;
+}
+.mui-title{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 22px;
+}
+.mui-content{
+	background: #fff;
+}
+a.mui-icon{
+	color: #fff;
+}
+a.active.mui-icon{
+	color: #fff;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color:#ff6867 ;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #FF6867;
+	border-bottom: 2px solid #FF6867;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #FF6867;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-top: 1px solid #FF6867;
+}

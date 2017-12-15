@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	</head>
+
+	<body class="bg" onresize="document.activeElement.scrollIntoView(true);">
+		<div class="mui-h1 logo mui-text-center">
+			<img src="images/chulogo.png" width="159" height="38" alt="" />
+		</div>
+		<!--表单-->
+		<div class="input-field">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>
+						<img src="images/zcshoujihao.png" width="20" height="20"/>
+					</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入手机号码">
+				</div>
+				<div class="mui-input-row mobile-send-row">
+					<label>
+						<img src="images/zcyanzhengma.png" width="20" height="20"/>
+					</label>
+					<input type="text" class="mui-input-clear register-mobile" placeholder="请输入手机验证码" />
+					<button type="button" value="发送验证码" class="mui-btn mui-btn-danger register-mobile-send">发送验证码</button>
+				</div>
+				<div class="mui-input-row">
+					<label>
+						<img src="images/zcmima.png" width="20" height="20"/>
+					</label>
+					<input type="password" class="mui-input-password" placeholder="请输入密码" />
+				</div>
+				<div class="mui-input-row">
+					<label>
+						<img src="images/zcquerenmima.png" width="20" height="20"/>
+					</label>
+					<input type="password" class="mui-input-password" placeholder="请输入确认密码" />
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label class="register-checkbox">我已阅读并同意<span>《厨房课堂协议》</span></label>
+					<input type="checkbox" value="item1" name="checkbox1" />
+				</div>
+				<button type="button" class="mui-btn mui-btn-block mui-btn-danger login-btn" data-loading-text='提交中'>注册</button>
+			</form>
+			<div>
+				<a class="mui-pull-left login-forget">忘记密码?</a>
+				<a class="mui-pull-right login-forget">新用户注册</a>
+				<div class="mui-clearfix"></div>
+			</div>
+		</div>
+		<!--底部第三方登录-->
+		<div class="footer">
+				<div class="personal-mybuluo-head">
+					<div class="personal-mybuluo-wording">第三方快捷登录</div>
+					<div class="personal-border jmu-border-1px border-bottom"></div>
+				</div>
+				<div class="mui-row login-footer">
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcQQ.png" alt="" />
+						</a>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcweibo.png"/>
+						</a>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<a href="">
+							<img src="images/zcweixin.png"/>
+						</a>
+					</div>
+				</div>
+			
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui(document.body).on('tap','.login-btn',function(e){
+				mui(this).button('loading');
+				setTimeout(function(){
+					mui(this).button('reset');
+				}.bind(this),2000);
+			})
+			var i,timer;
+			$('.register-mobile-send').click(function(e){
+				var that = this;
+				if(timer){
+					return false;
+				}
+				i = 60;
+				timer = setInterval(function(){
+					$(that).html('还有'+i+'s');
+					i--;
+					if(i===0){
+						clearInterval(timer);
+						$(that).html('发送验证码');
+						timer='';
+						return;
+					}
+				},1000)
+			})
+			//安卓处理表单聚焦弹出软键盘会使页面移动的问题
+			var winHeight = $(window).height();
+			$(window).resize(function(){
+				var thisHeight = $(this).height();
+				if(winHeight - thisHeight > 140){
+					$('.footer').css('position','static');
+				}else{
+					$('.footer').css('position','fixed');
+				}
+			})
+			//IOS处理表单聚焦弹出软键盘会使页面移动的问题
+			$(document).on('focusin',function(){
+				$('.footer').css('position','static');
+			})
+			$(document).on('focusout',function(){
+				$('.footer').css('position','fixed');
+			})
+		</script>
+	</body>
+
+</html>
