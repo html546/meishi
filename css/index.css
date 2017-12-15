@@ -91,3 +91,14 @@ a.active.mui-icon{
 .popular,.cookbook{
 	padding: 0px 10px;
 }
+/*cookbook*/
+.cookbook_1{
+	display: flex;
+	flex-direction: column;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body.cookbook_1{
+	height: auto;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body.cookbook_1 p{
+	font-size: 12px;
+} 
