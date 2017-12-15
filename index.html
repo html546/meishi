@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
 		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+		<script src="js/jquery.vticker.min.js"></script>		
 	</head>
 
 	<body class="bg">
@@ -60,6 +61,7 @@
 										第一个选项卡子项-5
 									</li>
 								</ul>-->
+								<!--轮播图-->
 								<div class="mui-slider carousel-slider">
 								  <div class="mui-slider-group mui-slider-loop">
 								    <!--支持循环，需要重复图片节点-->
@@ -71,6 +73,151 @@
 								    <!--支持循环，需要重复图片节点-->
 								    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lunbo1.jpg" /></a></div>
 								  </div>
+								</div>
+								<!--搜索框-->
+								<form action="" class="mui-input-group">
+									<div class="mui-input-row mui-search">
+										<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的菜谱、食材或菜单" />
+									</div>
+								</form>
+								<!--四个专题-->
+								<div class="mui-row topic" >
+									<div class="mui-col-sm-3 mui-col-xs-3 topic_1">
+										<a href="#">
+											<img src="images/syzhuanti.png" alt="" />
+											<p>专题</p>
+										</a>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 topic_1">
+										<a href="#">
+											<img src="images/syfulishe.png" alt="" />
+											<p>福利社</p>
+										</a>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 topic_1">
+										<a href="#">
+											<img src="images/syhuodong.png" alt=""/>
+											<p>活动</p>
+										</a>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 topic_1">
+										<a href="#">
+											<img src="images/syqiandao.png"/>
+											<p>签到</p>
+										</a>
+									</div>
+								</div>
+								
+								<!--浏览记录-->
+								<div class="browse">
+									<div class="browse_left">
+										<p>浏览记录</p>
+									</div>
+									<div class="browse_center">
+										<ul>
+											<li class="browse_center_1">
+												<p>每日推送|为您精选，不容错过</p>
+												<span>精彩历史</span>
+											</li>
+											<li class="browse_center_1">
+												<p>每日推送|为您精选，不容错过2</p>
+												<span>精彩历史2</span>
+											</li>
+											<li class="browse_center_1">
+												<p>每日推送|为您精选，不容错过3</p>
+												<span>精彩历史3</span>
+											</li>
+											<li class="browse_center_1">
+												<p>每日推送|为您精选，不容错过4</p>
+												<span>精彩历史4</span>
+											</li>
+										</ul>
+									</div>
+									<div class="browse_right">
+										<span class="mui-icon mui-icon-arrowdown"></span>
+									</div>
+								</div>
+								<div class="blank_space"></div>
+								<!--温暖与流行-->
+								<div class="mui-content popular">
+									<h5>温暖与流行</h5>
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_03.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													热菜:温暖的餐桌
+													<p class="mui-ellipsis">菜单:温暖的餐桌</p>
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_06.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													酸汤美食·大爱番茄
+													<p class="mui-ellipsis">菜单|最爱番茄</p>
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_08.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													平菇这样做实在是香!
+													<p class="mui-ellipsis">菜单|平菇这样做实在是香!</p>
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_03.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													热菜:温暖的餐桌
+													<p class="mui-ellipsis">菜单:温暖的餐桌</p>
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_06.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													酸汤美食·大爱番茄
+													<p class="mui-ellipsis">菜单|最爱番茄</p>
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="#">
+												<img src="images/menu_08.png" alt="" class="mui-media-object mui-pull-left" />
+												<div class="mui-media-body">
+													平菇这样做实在是香!
+													<p class="mui-ellipsis">菜单|平菇这样做实在是香!</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="blank_space"></div>
+								
+								<!--菜谱分类精选-->
+								<div class="mui-content cookbook">
+									<h5>菜谱分类精选</h5>
+									<ul class="mui-table-view mui-grid-view">
+									    <li class="mui-table-view-cell mui-media mui-col-xs-3">
+									        <a href="#">
+									            <img class="mui-media-object" src="images/cookbook_03.png">
+									            <div class="mui-media-body">文字说明1</div>
+									        </a>
+									    </li>
+									    <li class="mui-table-view-cell mui-media mui-col-xs-3">
+									        <a href="#">
+									            <img class="mui-media-object" src="images/cookbook_05.png">
+									            <div class="mui-media-body">文字说明2</div>
+									        </a>
+									    </li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -173,6 +320,9 @@
 				var height1 = ($(window).height()-135)+'px';
 				$('.mui-control-content').css('min-height',height1);
 			}
+			$('.browse_center').vTicker({
+				showItems:'1'
+			});
 		</script>
 	</body>
 
