@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/classify.css" />
+		<link rel="stylesheet" href="css/cookbook.css" />
+	</head>
+
+	<body>
+		<!--头部导航-->
+		<header id="header" class="mui-bar mui-bar-nav" >
+			<a href="#" class="mui-icon mui-icon mui-icon-back"></a>
+			<h1 class="mui-title">菜谱名称</h1>
+			<a href="#" class="mui-icon mui-pull-right">
+				<img src="images/bqfenxiang.png" width="25" height="25" alt="" />
+			</a>
+		</header>
+		
+		<div class="mui-content" style="margin-bottom: 50px;">
+		<!--头部选项卡-->
+			<div id="SegmentedControl" class="mui-segmented-control">
+				<a href="index.html" class="mui-control-item mui-active navigation1">
+					智能排序
+				</a>
+				<a href="classify.html" class="mui-control-item navigation2">
+					评分最高
+				</a>
+				<a href="#item3mobile" class="mui-control-item navigation3">
+					做过最多
+				</a>
+			</div>
+			<!--菜谱详情-->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img src="images/cookbook2_03.png" alt="" class="mui-media-object mui-pull-left" />
+						<div class="mui-media-body">
+							<h4>糖醋排骨</h4>
+							<p>排骨、生姜、大蒜、大葱、纯菜油...</p>
+							<p><span>555</span>个收藏,<span>666</span>万次阅读</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img src="images/cookbook2_06.png" alt="" class="mui-media-object mui-pull-left" />
+						<div class="mui-media-body">
+							<h4>枸杞菌菇鸡腿汤</h4>
+							<p>鸡腿、笋干、干香菇、黑木耳、枸杞...</p>
+							<p><span>555</span>个收藏,<span>666</span>万次阅读</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img src="images/cookbook2_08.png" alt="" class="mui-media-object mui-pull-left" />
+						<div class="mui-media-body">
+							<h4>平菇这样做实在是香!</h4>
+							<p>平菇、青辣椒、红辣椒、葱、姜、蒜...</p>
+							<p><span>555</span>个收藏,<span>666</span>万次阅读</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img src="images/cookbook2_03.png" alt="" class="mui-media-object mui-pull-left" />
+						<div class="mui-media-body">
+							<h4>糖醋排骨</h4>
+							<p>排骨、生姜、大蒜、大葱、纯菜油...</p>
+							<p><span>555</span>个收藏,<span>666</span>万次阅读</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img src="images/cookbook2_06.png" alt="" class="mui-media-object mui-pull-left" />
+						<div class="mui-media-body">
+							<h4>枸杞菌菇鸡腿汤</h4>
+							<p>鸡腿、笋干、干香菇、黑木耳、枸杞...</p>
+							<p><span>555</span>个收藏,<span>666</span>万次阅读</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--底部选项卡-->
+		<nav class="mui-bar mui-bar-tab mui-bar2">
+            <a id="defaultTab" class="mui-tab-item mui-active" href="tab-webview-subpage-about.html">
+                <span class="mui-icon iconfont icon-caipu"></span>
+                <span class="mui-tab-label">菜谱</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+                <span class="mui-icon iconfont icon-shangchang"></span>
+                <span class="mui-tab-label">商场</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-contact.html">
+                <span class="mui-icon iconfont icon-H_shejiaofenxi"></span>
+                <span class="mui-tab-label">社交</span>
+            </a>
+            <a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+                <span class="mui-icon iconfont icon-iconfontgeren"></span>
+                <span class="mui-tab-label">个人中心</span>
+            </a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
