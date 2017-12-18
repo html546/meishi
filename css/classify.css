@@ -13,3 +13,23 @@
 	margin-left: -128px;
 	top: 10px;
 }
+.mui-bar-nav~.mui-content.mui-fullscreen{
+	padding-top: 0px;
+	top: 85px;
+	bottom: 55px;
+	height: 100%;
+}
+.snack_1{
+	width: 80px;
+	height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -40px;
+	margin-bottom: 10px;
+}
+.snack,.space,.drink{
+	margin-bottom: 20px;
+}
+.segmentedControls>a{
+	border-right: 1px solid #c8c7cc;
+}

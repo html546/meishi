@@ -7,134 +7,393 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
 		<link rel="stylesheet" href="css/classify.css" />
 	</head>
 
-	<body>
+	<body class="bg">
+		<!--头部导航-->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a href="#" class="mui-icon mui-icon-search mui-pull-left"></a>
+			<h1 class="mui-title">厨房课堂</h1>
+			<a href="#" class="mui-icon mui-pull-right">
+				<img src="images/syfacaipuwz.png" width="25" height="25" alt="" />
+			</a>
+		</header>
+		<div class="mui-content">
+			<div id="SegmentedControl" class="mui-segmented-control">
+				<a href="index.html" class="mui-control-item  navigation1">
+					首页
+				</a>
+				<a href="classify.html" class="mui-control-item mui-active navigation2">
+					分类
+				</a>
+				<a href="#item3mobile" class="mui-control-item navigation3">
+					食材
+				</a>
+				<a href="#item4mobile" class="mui-control-item navigation4">
+					健康
+				</a>
+			</div>
+		</div>
+		<!--<div class="mui-clearfix"></div>-->
 		<div class="mui-content mui-row mui-fullscreen">
-			<div class="mui-scroll-wrapper">
-				<div class="mui-scroll">
-					<div class="mui-col-xs-3">
-						<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
-							<a href="#content1" data-index='0' class="mui-control-item mui-active">推荐</a>
-							<a href="#content2" data-index='1' class="mui-control-item ">主食小吃</a>
-							<a href="#content3" data-index='2' class="mui-control-item ">甜品饮品</a>
-							<a href="#content4" data-index='3' class="mui-control-item ">中式菜系</a>
-							<a href="#content5" data-index='4' class="mui-control-item ">外国美食</a>
-							<a href="#content6" data-index='5' class="mui-control-item ">场景美食方式</a>
-							<a href="#content7" data-index='6' class="mui-control-item ">健康食补</a>
-							<a href="#content8" data-index='7' class="mui-control-item ">烘培大全</a>
-							<a href="#content9" data-index='8' class="mui-control-item ">家常菜</a>
-							<a href="#content10" data-index='9' class="mui-control-item ">节日节气习俗</a>
-							<a href="#content11" data-index='10' class="mui-control-item ">口味</a>
-							<a href="#content12" data-index='11' class="mui-control-item ">烹饪方式</a>
-							<a href="#content13" data-index='12' class="mui-control-item ">烹饪时间</a>
+			<div class="mui-col-xs-3">
+				<div id="segmentedControls" style="border-right: 1px solid #c8c7cc;" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+					<a href="#content1" data-index='0' class="mui-control-item mui-active">推荐</a>
+					<a href="#content2" data-index='1' class="mui-control-item ">主食小吃</a>
+					<a href="#content3" data-index='2' class="mui-control-item ">甜品饮品</a>
+					<a href="#content4" data-index='3' class="mui-control-item ">中式菜系</a>
+					<a href="#content5" data-index='4' class="mui-control-item ">外国美食</a>
+					<a href="#content6" data-index='5' class="mui-control-item ">场景美食方式</a>
+					<a href="#content7" data-index='6' class="mui-control-item ">健康食补</a>
+					<a href="#content8" data-index='7' class="mui-control-item ">烘培大全</a>
+					<a href="#content9" data-index='8' class="mui-control-item ">家常菜</a>
+					<a href="#content10" data-index='9' class="mui-control-item ">节日节气习俗</a>
+					<a href="#content11" data-index='10' class="mui-control-item ">口味</a>
+					<a href="#content12" data-index='11' class="mui-control-item ">烹饪方式</a>
+					<a href="#content13" data-index='12' class="mui-control-item ">烹饪时间</a>
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9" >
+				<div id="content1" class="mui-control-content mui-active">
+					<img src="images/classify_1_03.png" width="255" height="90" />
+					<div class="mui-row">
+						<div class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_08.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">冬季食谱</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_03.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">热菜</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_05.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">凉菜</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_13.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">中秋</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_14.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">主食</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_15.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">小吃</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_20.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">早餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_21.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">午餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_19.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">晚餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_26.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">零食</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_25.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">烘培</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<img src="images/classify_27.png" alt="" class="mui-media-object" />
+									<div class="mui-media-body">西餐</div>
+								</a>
+							</li>
 						</div>
 					</div>
-					<div id="segmentedControlContents" class="mui-col-xs-9">
-						<div id="content1" class="mui-control-content mui-active">
-							<img src="images/classify_1_03.png" width="255" height="90" />
-							<div class="mui-row">
-								<div class="mui-table-view mui-grid-view">
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_08.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">冬季食谱</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_03.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">热菜</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_05.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">凉菜</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_13.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">中秋</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_14.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">主食</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_15.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">小吃</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_20.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">早餐</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_21.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">午餐</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_19.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">晚餐</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_26.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">零食</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_25.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">烘培</div>
-										</a>
-									</li>
-									<li class="mui-table-view-cell mui-media mui-col-xs-4">
-										<a href="#">
-											<img src="images/classify_27.png" alt="" class="mui-media-object" />
-											<div class="mui-media-body">西餐</div>
-										</a>
-									</li>
-								</div>
-							</div>
+				</div>
+				<div id="content2" class="mui-control-content">
+					<div class="mui-row snack">
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">米饭</button>
+							</a>
 						</div>
-						<div id="content2" class="mui-control-content">
-							<div class="mui-row">
-									<div class="mui-table-view mui-grid-view">
-										<li class="mui-table-view-cell mui-media mui-col-xs-4">
-											<a href="#">
-												<img src="images/classify1_07.png" alt="" class="mui-media-object" />
-												<div class="mui-media-body">冬季食谱</div>
-											</a>
-										</li>
-									</div>
-							</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">包子</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">饺子</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">馒头花卷</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">面条</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">饼</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">粥</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">炒饭</button>
+							</a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#">
+								<button type="button" class="mui-btn snack_1">面食</button>
+							</a>
+						</div>
+					</div>
+					
+					<div class="mui-row space">
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">馄饨</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">五谷杂粮</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">北京小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">广东小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">四川小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">重庆小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">天津小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">上海小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">福建小吃</button></a>
+						</div>
+					</div>
+					
+					<div class="mui-row space">
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">湖南小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">湖北小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">山西小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">江西小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">山东小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">山西小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">河南小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">江浙小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">云贵小吃</button></a>
+						</div>
+					</div>
+					
+					<div class="mui-row space">
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">东北小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">西北小吃</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">台湾小吃</button></a>
+						</div>
+					</div>
+				</div>
+				<div id="content3" class="mui-control-content">
+					<div class="mui-row drink">
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">鸡尾酒</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">咖啡</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">奶昔</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰激凌</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果冻</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">酸奶</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果酱</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">豆浆</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰品</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果汁</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">糖水</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">布丁</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰激凌</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果冻</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">酸奶</button></a>
+						</div>
+					</div>
+					
+					<div class="mui-row drink">
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">鸡尾酒</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">咖啡</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">奶昔</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰激凌</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果冻</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">酸奶</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果酱</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">豆浆</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰品</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果汁</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">糖水</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">布丁</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">冰激凌</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">果冻</button></a>
+						</div>
+						<div class="mui-col-xs-4">
+							<a href="#"><button type="button" class="mui-btn snack_1">酸奶</button></a>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
-		
+		<!--底部选项卡-->
+			<nav class="mui-bar mui-bar-tab mui-bar2">
+	            <a id="defaultTab" class="mui-tab-item mui-active" href="tab-webview-subpage-about.html">
+	                <span class="mui-icon iconfont icon-caipu"></span>
+	                <span class="mui-tab-label">菜谱</span>
+	            </a>
+	            <a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+	                <span class="mui-icon iconfont icon-shangchang"></span>
+	                <span class="mui-tab-label">商场</span>
+	            </a>
+	            <a class="mui-tab-item" href="tab-webview-subpage-contact.html">
+	                <span class="mui-icon iconfont icon-H_shejiaofenxi"></span>
+	                <span class="mui-tab-label">社交</span>
+	            </a>
+	            <a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+	                <span class="mui-icon iconfont icon-iconfontgeren"></span>
+	                <span class="mui-tab-label">个人中心</span>
+	            </a>
+			</nav>
 		<script src="js/mui.min.js"></script>
 		<script>
 			mui.init();
 			mui('.mui-scroll-wrapper').scroll({
-				deceleration:0.005,
-				scrollY:true,
-				indicators: true, 
+				deceleration: 0.005,
+				scrollY: true,
+				indicators: true,
+			})
+			$('.navigation1').on('tap',function(){
+				mui.openWindow({
+					url:'index.html',
+					styles:{
+						top:0,
+						bottom:0,
+						width:'100%',
+						height:'100%'
+					}
+				})
 			})
 		</script>
 	</body>

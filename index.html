@@ -24,16 +24,16 @@
 		<!--头部选项卡-->
 		<div class="mui-content">
 				<div id="SegmentedControl" class="mui-segmented-control">
-					<a href="#item1mobile" class="mui-control-item mui-active">
+					<a href="index.html" class="mui-control-item mui-active navigation1">
 						首页
 					</a>
-					<a href="#item2mobile" class="mui-control-item">
+					<a href="classify.html" class="mui-control-item navigation2">
 						分类
 					</a>
-					<a href="#item3mobile" class="mui-control-item">
+					<a href="#item3mobile" class="mui-control-item navigation3">
 						食材
 					</a>
-					<a href="#item4mobile" class="mui-control-item">
+					<a href="#item4mobile" class="mui-control-item navigation4">
 						健康
 					</a>
 				</div>
@@ -408,34 +408,6 @@
 					indicators: true
 				})
 			})
-			/*var html2 = '<iframe src="classify.html" frameborder="0" width="100%" height="2000px" ></iframe>'
-			var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
-			var html4 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第四个选项卡子项-1</li><li class="mui-table-view-cell">第四个选项卡子项-2</li><li class="mui-table-view-cell">第四个选项卡子项-3</li><li class="mui-table-view-cell">第四个选项卡子项-4</li><li class="mui-table-view-cell">第四个选项卡子项-5</li></ul>';
-			var item2 = document.getElementById('item2mobile');
-			var item3 = document.getElementById('item3mobile');
-			var item4 = document.getElementById('item4mobile');
-			document.getElementById('slider').addEventListener('slide', function(e) {
-				if(e.detail.slideNumber === 1) {
-					if(item2.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item2.querySelector('.mui-scroll').innerHTML = html2;
-						}, 500);
-					}
-				} else if(e.detail.slideNumber === 2) {
-					if(item3.querySelector('.mui-loading')) {
-						setTimeout(function() {
-							item3.querySelector('.mui-scroll').innerHTML = html3;
-						}, 500);
-					}
-				}else if(e.detail.slideNumber === 3){
-					if(item4.querySelector('.mui-loading')){
-						setTimeout(function(){
-							item4.querySelector('.mui-scroll').innerHTML = html4;
-						})
-					}
-				}
-			
-			});*/
 			var gallery = mui('.carousel-slider');
 			gallery.slider({
 				interval:3000
@@ -447,50 +419,17 @@
 			$('.browse_center').vTicker({
 				showItems:'1'
 			});
-			/*var subpages = ['index.html', 'classify.html', 'faxian.html', 'me.html'];
-			var subpage_style = {
-				top: '80px',
-				bottom: '51px'
-			};
-			 //创建子页面，首个选项卡页面显示，其它均隐藏；
-			mui.plusReady(function() {
-				var self = plus.webview.currentWebview();
-				for (var i = 0; i < subpages.length; i++) {
-					var temp = {};
-					var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
-					if (i > 0) {
-						sub.hide();
+			$('.navigation2').on('tap',function(){
+				mui.openWindow({
+					url:'classify.html',
+					styles:{
+						top:0,
+						bottom:0,
+						width:'100%',
+						height:'100%'
 					}
-					self.append(sub);
-				}
-			});
-			 //当前激活选项
-			var activeTab = subpages[0];
-			 //选项卡点击事件
-			mui('.mui-segmented-control').on('tap', 'a', function(e) {
-				var targetTab = this.getAttribute('href');
-				if (targetTab == activeTab) {
-					return;
-				}
-				//显示目标选项卡
-				plus.webview.show(targetTab);
-				//隐藏当前;
-				plus.webview.hide(activeTab);
-				//更改当前活跃的选项卡
-				activeTab = targetTab;
-			});
-			 //自定义事件，模拟点击“首页选项卡”
-			document.addEventListener('gohome', function() {
-				var defaultTab = document.getElementById("defaultTab");
-				//模拟首页点击
-				mui.trigger(defaultTab, 'tap');
-				//切换选项卡高亮
-				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
-				if (defaultTab !== current) {
-					current.classList.remove('mui-active');
-					defaultTab.classList.add('mui-active');
-				}
-			});*/
+				})
+			})
 		</script>
 	</body>
 
