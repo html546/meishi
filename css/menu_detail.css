@@ -1,0 +1,47 @@
+.mui-ellipsis-2{
+	-webkit-line-clamp: 4;
+}
+p.purple{
+	color: #8984f8;
+}
+.space_title{
+	background: #eee;
+	padding: 5px 0px;
+}
+.article_list span{
+	position: absolute;
+	right: 30px;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	text-overflow: inherit;
+	overflow: auto;
+	height: auto;
+	text-align: justify;
+}
+.mui-table-view{
+	list-style: decimal;
+}
+.article_tips_content p{
+	color: #000;;
+}
+.new_commend{
+	margin-top: 20px;
+}
+.tips_icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.commend_left{
+	display: flex;
+	flex-direction: column;
+}
+.commend_author{
+	color: #000;
+}
+.commend_btn{
+	width: 80%;
+	margin-left: 10%;
+	padding: 10px 0px;
+	margin-top: 10px;
+}
