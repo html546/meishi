@@ -15,7 +15,7 @@
 	<body class="bg">
 		<!--头部导航-->
 		<header id="header" class="mui-bar mui-bar-nav">
-			<a href="#" class="mui-icon mui-icon-search mui-pull-left"></a>
+			<a href="#" class="mui-icon mui-icon-search mui-pull-left search"></a>
 			<h1 class="mui-title">厨房课堂</h1>
 			<a href="#" class="mui-icon mui-pull-right">
 				<img src="images/syfacaipuwz.png" width="25" height="25" alt="" />
@@ -388,6 +388,17 @@
 			$('.navigation1').on('tap',function(){
 				mui.openWindow({
 					url:'index.html',
+					styles:{
+						top:0,
+						bottom:0,
+						width:'100%',
+						height:'100%'
+					}
+				})
+			})
+			$('.search').on('tap',function(){
+				mui.openWindow({
+					url:'search.html',
 					styles:{
 						top:0,
 						bottom:0,

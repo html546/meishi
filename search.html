@@ -6,9 +6,119 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/classify.css" />
+		<link rel="stylesheet" href="css/search.css" />
 	</head>
 
-	<body>
+	<body class="bg">
+		<!--头部导航-->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a href="#" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<div class="mui-title mui-input-row mui-search mui-clearfix">
+				<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的关键字" />
+			</div>
+			<a href="#" class="mui-icon mui-icon-search mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+			<!--头部选项卡-->
+			<div id="SegmentedControl" class="mui-segmented-control">
+				<a class="mui-control-item mui-active navigation1">
+					菜谱
+				</a>
+				<a class="mui-control-item navigation2">
+					食材
+				</a>
+				<a href="#item3mobile" class="mui-control-item navigation3">
+					菜单
+				</a>
+				<a href="#item3mobile" class="mui-control-item navigation3">
+					会员
+				</a>
+				<a href="#item3mobile" class="mui-control-item navigation3">
+					话题
+				</a>
+			</div>
+		</div>
+		<div class="mui-content-padded">
+			<!--热门搜索-->
+			<div class="search_details">
+				<h4>
+					<span class="mui-icon">
+						<img src="images/ssremen.png" width='20' height="20"/>
+					</span>
+					热门搜索
+				</h4>
+				<div class="mui-row">
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">补血</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">热菜</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">早餐</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">排骨</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">红烧肉</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">羊肉</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">南瓜</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">御寒</button></a>
+					</div>
+					<div class="mui-col-xs-4">
+						<a href="#"><button type="button" class="mui-btn search_hot">汤</button></a>
+					</div>
+				</div>
+				<!--搜索历史-->
+				<div class="history_title">
+					<div class="mui-pull-left">
+						<h4>
+							<span class="mui-icon">
+								<img src="images/sslishi.png" width="20" height="20"/>
+							</span>
+							历史搜索
+						</h4>
+					</div>
+					<div class="mui-pull-right">
+						<h4>
+							清除历史
+							<span class="mui-icon">
+								<img src="images/ssqingchujl.png" width="20" height="20" alt="" />
+							</span>
+						</h4>
+					</div>
+					<div class="mui-clearfix"></div>
+				</div>
+				<div class="search_history">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#" class="mui-navigate-right">补血<span>菜谱</span></a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#" class="mui-navigate-right">南瓜<span>菜谱</span></a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#" class="mui-navigate-right">大虾<span>食材</span></a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#" class="mui-navigate-right">早餐<span>菜谱</span></a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()

@@ -1,0 +1,50 @@
+.mui-search:before {
+	top: 60%;
+}
+
+.mui-input-row.mui-search .mui-icon-clear {
+	top: 0px;
+	right: 5px;
+}
+
+input {
+	font-weight: normal;
+}
+
+input[type='search'] {
+	background-color: #fff;
+	color: #999;
+}
+
+.mui-search .mui-placeholder {
+	line-height: 50px;
+	font-weight: normal;
+}
+
+div.mui-title.mui-input-row.mui-search.mui-clearfix:before {
+	position: absolute;
+	top: 12px;
+	color: #999;
+}
+
+.mui-bar .mui-input-row .mui-input-clear~.mui-icon-clear {
+	position: absolute;
+	top: 14px;
+}
+.search_details .mui-icon>img{
+	position: relative;
+	top: 3px;
+}
+.search_hot{
+	width: 110px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.history_title .mui-icon>img{
+	position: relative;
+	top: 3px;
+}
+.search_history span{
+	position: absolute;
+	right: 30px;
+}

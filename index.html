@@ -15,7 +15,7 @@
 	<body class="bg">
 		<!--头部导航-->
 		<header id="header" class="mui-bar mui-bar-nav" >
-			<a href="#" class="mui-icon mui-icon-search mui-pull-left"></a>
+			<a href="#" class="mui-icon mui-icon-search mui-pull-left search"></a>
 			<h1 class="mui-title">厨房课堂</h1>
 			<a href="#" class="mui-icon mui-pull-right">
 				<img src="images/syfacaipuwz.png" width="25" height="25" alt="" />
@@ -401,7 +401,17 @@
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init({
-				swipeBack:false
+				swipeBack:false,
+				/*subpages:[{
+					url:'index.html',
+					id:'index',
+					styles:{
+						top:0,
+						bottom:0,
+						width:'100%',
+						height:''
+					}
+				}]*/
 			})
 			(function($){
 				$('.mui-scroll-wrapper').scroll({
@@ -422,6 +432,17 @@
 			$('.navigation2').on('tap',function(){
 				mui.openWindow({
 					url:'classify.html',
+					styles:{
+						top:0,
+						bottom:0,
+						width:'100%',
+						height:'100%'
+					}
+				})
+			})
+			$('.search').on('tap',function(){
+				mui.openWindow({
+					url:'search.html',
 					styles:{
 						top:0,
 						bottom:0,
