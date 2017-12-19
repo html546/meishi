@@ -17,7 +17,7 @@
 		<header id="header" class="mui-bar mui-bar-nav">
 			<a href="#" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">母鸡炖蘑菇</h1>
-			<a href="#" class="mui-icon mui-icon-more mui-pull-right"></a>
+			<a href="#popover" class="mui-icon mui-icon-more mui-pull-right"></a>
 		</header>
 		<!--主题-->
 		<div class="mui-content">
@@ -253,19 +253,123 @@
 						</span>
 						<span>收藏</span>
 					</div>
-					<div class="write_others_item mui-col-xs-3">
+					<div class="write_others_item mui-col-xs-3 join_menu">
 						<span class="mui-icon">
 							<img src="images/gyjrcaidan.png" alt="" />
 						</span>
 						<span>加入菜单</span>
 					</div>
-					<div class="write_others_item mui-col-xs-3">
+					<div class="write_others_item mui-col-xs-3 share_menu">
 						<span class="mui-icon">
 							<img src="images/fenxiang.png" alt="" />
 						</span>
 						<span>分享</span>
 					</div>
 				</div>
+		</div>
+		<!--弹出框内容-->
+		<div id="popover" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">返回首页</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">菜谱浏览历史</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">烹饪模式</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">字体大小</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">删除当前菜谱(发菜谱本人才显示)</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">取消</a>
+				</li>
+			</ul>
+		</div>
+		<!--弹出框内容2-->
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<p class="mui-text-cener">加入到菜单</p>
+				</li>
+				<li class="mui-table-view-cell">
+						<p class="mui-pull-left">菜单名称1</p>
+						<p class="mui-pull-right"><span>3篇</span></p>
+				</li>
+				<li class="mui-table-view-cell">
+						<p class="mui-pull-left">菜单名称2</p>
+						<p class="mui-pull-right"><span>2篇</span></p>
+				</li>
+				<li class="mui-table-view-cell">
+					<p class="mui-text-center">您没有更多的菜单了</p>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<p style="color: #ff6769;">创建新菜单</p>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#sheet1">
+						<p>
+							取消
+						</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--弹出框内容3-->
+		<div id="sheet2" class="mui-popover mui-popover-bottom mui-popover-action">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<p class="mui-text-center">
+						分享到
+					</p>
+				</li>
+			
+				<li class="mui-table-view-cell">
+					<div class="mui-row">
+						<div class="mui-col-xs-3 mui-media">
+							<img src="images/fxQQ.png" class="mui-media-object" width="50" height="50" alt="" />
+							<div class="mui-media-body">QQ</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/fxQQkongjian.png" width="50" height="50" alt="" />
+							<div class="mui-media-body">QQ空间</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/zcweibo.png" width="50" height="50" alt="" />
+							<div class="mui-media-body">微博</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/fxlianjie.png" width="50" height="50"/>
+							<div class="mui-media-body">复制链接</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/zcweixin.png" width="50" height="50"/>
+							<div class="mui-media-body">微信</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/fxpengyouquan.png" width="50" height="50"/>
+							<div class="mui-media-body">朋友圈</div>
+						</div>
+						<div class="mui-col-xs-3 mui-media">
+							<img class="mui-media-object" src="images/fxwxshoucang.png" width="50" height="50"/>
+							<div class="mui-media-body">微信收藏</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#sheet2">
+						<p>
+							取消
+						</p>
+					</a>
+				</li>
+			</ul>
 		</div>
 		<script src="js/mui.min.js"></script>
 		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
@@ -280,6 +384,12 @@
 					$(this).html('展开全部');
 				}
 				
+			})
+			$('.join_menu').on('tap',function(){
+				mui('#sheet1').popover('toggle');
+			})
+			$('.share_menu').on('tap',function(){
+				mui('#sheet2').popover('toggle');
 			})
 		</script>
 	</body>

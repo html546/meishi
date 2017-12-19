@@ -21,13 +21,15 @@ input[type='search'] {
 	font-weight: normal;
 }
 .mui-bar .mui-title{
-	left: -10px;
+	left: -5px;
+	right: 0px;
 }
 .mui-bar .mui-btn.search_menu{
-	width: 50px;
+	width: 40px;
 	top: 8px;
-	padding: 7px 0px;
-	margin-right: 5px;
+	font-size: 12px;
+	padding: 8px 0px;
+	margin-right: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border: none;
