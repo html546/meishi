@@ -74,10 +74,6 @@ p.purple{
 .write_commend .write_others{
 	width: calc(50% - 20px);
 	float: left;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-grow: 0 1 auto;
 }
 .write_commend .write_others .write_others_item{
 	display: flex;
@@ -86,14 +82,13 @@ p.purple{
 .write_commend .write_others .write_others_item img{
 	width: 25px;
 	height: 25px;
-	position: relative;
-	left: 50%;
-	margin-left: calc(-25px/2);
 }
 .write_commend .write_others .write_others_item span{
-	font-size: 14px;
+	font-size: 10px;
 	color: #666;
+	text-align: center;
 }
 .write_commend .write_others .write_others_item.active span{
 	color: #fd7170;
+	text-align: center;
 }

@@ -1,0 +1,15 @@
+.sociality_nav>div{
+	display: flex;
+	flex-direction: column;
+}
+.sociality_nav img{
+	width: 40px;
+	height: 40px;
+}
+.sociality_nav span{
+	text-align: center;
+	font-size: 14px;
+}
+.mui-content{
+	margin-bottom: 60px;
+}
