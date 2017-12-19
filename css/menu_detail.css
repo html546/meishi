@@ -60,31 +60,35 @@ p.purple{
 .write_commend .mui-input-row{
 	width: 50%;
 	float: left;
+	background: #eee;
+	border-radius: 5px;
+	margin:0px 10px;
 }
 .write_commend .mui-input-row label{
 	width: 15%;
-	padding: 11px 15px 15px 11px;
+	padding: 11px 15px 5px 5px;
 }
 .write_commend .mui-input-row input{
 	width: 85%;
 }
 .write_commend .write_others{
-	width: 50%;
+	width: calc(50% - 20px);
 	float: left;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-grow: 0 1 auto;
 }
 .write_commend .write_others .write_others_item{
 	display: flex;
 	flex-direction: column;
 }
 .write_commend .write_others .write_others_item img{
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	position: relative;
 	left: 50%;
-	margin-left: -15px;
+	margin-left: calc(-25px/2);
 }
 .write_commend .write_others .write_others_item span{
 	font-size: 14px;
