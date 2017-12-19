@@ -20,7 +20,20 @@ input[type='search'] {
 	line-height: 50px;
 	font-weight: normal;
 }
-
+.mui-bar .mui-title{
+	left: -10px;
+}
+.mui-bar .mui-btn.search_menu{
+	width: 50px;
+	top: 8px;
+	padding: 7px 0px;
+	margin-right: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: none;
+	border-right: 1px solid #eee;
+	line-height: 1.1;
+}
 div.mui-title.mui-input-row.mui-search.mui-clearfix:before {
 	position: absolute;
 	top: 12px;
